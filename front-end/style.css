@@ -1,0 +1,339 @@
+body{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+h1{
+    font-size: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pic_logo{
+    width: 120px;
+    margin-top: -60px;
+    margin-left: -30px;
+}
+
+header {
+    background-color: #001D3D;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+li a {
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-decoration: none;;
+}
+
+li a:hover {
+    color: #ffb600;
+}
+
+.cart ion-icon {
+   vertical-align: bottom;
+   font-size: 20px;
+   padding-right: 5px;
+}
+
+.cart a {
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+hr{
+    color:#fff ;
+    background-color: #fff;
+    width: 100%;
+    height: 5px;
+}
+
+.container,
+.container-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;;
+}
+
+.image {
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.add-cart {
+    position: absolute;
+    width: 100%;
+    background-color: darkgrey;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4 {
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* ----------------- CART PAGE --------------- */
+
+.container-products {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.container-products ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.product ion-icon {
+    cursor: pointer;
+    
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
+
+@media(max-width: 500px) {
+    nav h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;;
+    }
+
+    .sm-hide {
+        display: none;;
+    }
+
+    .products,
+    .product-header {
+        justify-content: center;
+    }
+
+    .basketTotalContainer {
+        padding-right: 8%;
+    }
+}
+
+.pic_slider{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* ส่วนท้าย */
+#bottom{
+    color: rgb(255, 255, 255);
+    background-color: #001D3D;
+}
+
+.text_right{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.text_left{
+    margin-left: 20px;
+    
+}
+
+
+.follow{
+    margin-top: -110px;
+
+}
+/* สินค้าเข้าใหม่ */
+.new{
+text-align: center;
+}
+
+.new h2{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.pic_shoes{
+    width: 90%;
+}
+
+.new table{
+    color:black;
+    margin-top: 30px;
+}
+
+/* แบรนด์ */
+
+.pic_brands{
+    width: 90%;
+}
+
+.brands{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.brands table {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+
+/* สินค้าลดราคา */
+.sale_products{
+    text-align: center;
+    }
+    
+ .sale_products h2{
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+    
+.sale_products a{
+    color: rgb(139, 139, 139);
+ }
+    
+.sale_products{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.sale_products table{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    color: rgb(0, 0, 0);
+}
+
+.sele{
+    text-align: right;
+    color: rgb(236, 0, 0);
+}
+
+
+
+
